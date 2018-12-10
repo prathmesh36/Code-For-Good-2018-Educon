@@ -1,15 +1,14 @@
 # Code for Good 2018 - Educon
-Educon is a web based solution developed for the NGO Jain Social Group with a motive of semi-automating the entire process of providing donations to needy students. This solution was developed as a part of Code for Good 2018 organised by J. P. Morgan Chase & Co.
+Educon is a web-based solution developed for the NGO Jain Social Group with a motive of semi-automating the entire process of providing donations to needy students. This solution was developed as a part of the Code for Good 2018 organized by J. P. Morgan Chase & Co.
 
-Jain Social Group is a Mumbai based NGO that aims in helping needy students by providing financial assistance for their ongoing education. Various such students register themselves with the NGO. The NGO finds potential donors for such students also giving the donor the independence to choose the student whom they would like to give financial assitance for the current year or throughout his or hers education life.
+Jain Social Group is a Mumbai based NGO that aims in helping needy students by providing financial assistance for their ongoing education. Various such students register themselves with the NGO. The NGO finds potential donors for such students also giving the donor the independence to choose the student whom they would like to give financial assistance for the current year or throughout his or her education life.
 
-At this time this entire process is manual, volunteers from the foundation personally register the students and donors and maintain the records on excel sheets.
-Other processes like verifying the student personally, passing the donation, funds management is also done manually by the volunteers and the committee members. 
+AAt this time this entire process is manual, volunteers from the foundation personally register the students and donors and maintain the records on excel sheets. Other processes like verifying the student personally, passing the donation, funds management is also done manually by the volunteers and the committee members.
 
-To eliminate the manual process and provide a semi automated solution in this era of digitization, we have implemented some economical and feasible solutions that will help in smooth functioning of NGO processes.
+To eliminate the manual process and provide a semi-automated solution in this era of digitization, we have implemented some economical and feasible solutions that will help in the smooth functioning of NGO processes. 
 Following are the features we have implemented:
 * Role Based Authentication Systen for different users of the System - Donor, Student, Committee Member, etc.
-* Chart Based Visualization of Student profile for assisting in decision making to both donor while donating amount as well as committee members for passing donations
+* Chart Based Visualization of Student profile for assisting in decision making to both donors while donating the amount as well as committee members for passing donations
 * Document Uploading and Viewing of every student user for verifying their authenticity
 * PHP Mailer Based Notification of Application Status
 
