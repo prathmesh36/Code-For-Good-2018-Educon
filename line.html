@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Line Chart</title>
+		<script src="assets/js/Chart.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js"></script>
+
+	</head>
+	<body>
+		
+			<div width="600" height="400" style="display: block;">
+				<canvas id="canvas" style="display: block; overflow: hidden;" ></canvas>
+			</div>
+		
+		
+
+
+	<script>
+		var xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		     // document.getElementById("demo").innerHTML = this.responseText;
+		     // document.getElementById("test").innerHTML = this.responseText;
+		     display(this.responseText);
+		    }
+		  };
+		  xhttp.open("get", "get_chart_data.php?id=1", true);
+		  // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		  // xhttp.send("id=1");
+		  xhttp.send();
+
+		 // $.post("get_chart_data.php",
+                function display(data)
+                {
+                    console.log(data);
+                    var data_json = JSON.parse(data);
+                    var year = [];
+                    var income = [];
+                    var result = [];
+                    console.log(data_json);
+
+
+
+                    for (var i in data_json) {
+                    	console.log(data_json[i]);
+                        year.push(parseFloat(data_json[i].year));
+                        income.push(parseFloat(data_json[i].income)/100);
+                        result.push(parseFloat(data_json[i].result));
+                    }
+                    console.log("year = " + year[0]);
+
+                    var chartdata = {
+                        labels: year,
+                        datasets: [
+                            {
+                                label: 'Student Marks',
+                                // backgroundColor: '#49e2ff',
+                                borderColor: '#46d5f1',
+                                hoverBackgroundColor: '#CCCCCC',
+                                hoverBorderColor: '#666666',
+                                data: result
+                            },
+                            {
+                                label: 'Income (in 00)',
+                                // backgroundColor: '#49e2ff',
+                                borderColor: '#CCCCCC',
+                                hoverBackgroundColor: '#CCCCCC',
+                                hoverBorderColor: '#666666',
+                                data: income
+                            }
+                        ]
+                    };
+
+                    var graphTarget = document.getElementById("canvas");
+
+                    var barGraph = new Chart(graphTarget, {
+                        type: 'line',
+                        data: chartdata
+                    });
+
+                    var ctx = document.getElementById("canvas").getContext("2d");
+					window.myLine = new Chart(ctx).Line(chartdata, {
+						responsive: true
+					});
+                };
+
+		// var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		// var lineChartData = {
+		// 	labels : ["January","February","March","April","May","June","July"],
+		// 	datasets : [
+		// 		{
+		// 			label: "My First dataset",
+		// 			fillColor : "rgba(220,220,220,0.2)",
+		// 			strokeColor : "rgba(220,220,220,1)",
+		// 			pointColor : "rgba(220,220,220,1)",
+		// 			pointStrokeColor : "#fff",
+		// 			pointHighlightFill : "#fff",
+		// 			pointHighlightStroke : "rgba(220,220,220,1)",
+		// 			data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+		// 		},
+		// 		{
+		// 			label: "My Second dataset",
+		// 			fillColor : "rgba(151,187,205,0.2)",
+		// 			strokeColor : "rgba(151,187,205,1)",
+		// 			pointColor : "rgba(151,187,205,1)",
+		// 			pointStrokeColor : "#fff",
+		// 			pointHighlightFill : "#fff",
+		// 			pointHighlightStroke : "rgba(151,187,205,1)",
+		// 			data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+		// 		}
+		// 	]
+
+		// }
+
+	// window.onload = function(){
+	// 	var ctx = document.getElementById("canvas").getContext("2d");
+	// 	window.myLine = new Chart(ctx).Line(chartdata, {
+	// 		responsive: true
+	// 	});
+	// }
+
+
+	</script>
+	</body>
+</html>

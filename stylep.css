@@ -1,0 +1,47 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+.container .steps {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.container .steps ul {
+  list-style: none;
+}
+.container .steps ul li {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 100%;
+  background: #d8d8d8;
+  margin-right: 2rem;
+  position: relative;
+}
+.container .steps ul li:first-child {
+  margin-left: unset;
+}
+.container .steps ul li:first-child:before {
+  display: none;
+}
+.container .steps ul li:before {
+  content: "";
+  width: 2.4rem;
+  background-color: #d8d8d8;
+  height: 2px;
+  position: absolute;
+  top: 2rem;
+  right: 3.9rem;
+}
+.container .steps ul .active {
+  background: #03A9F4;
+  color: #fff;
+}
+.container .steps ul .active:before {
+  background-color: #03A9F4;
+}

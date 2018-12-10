@@ -1,0 +1,112 @@
+<?php
+include'all.php';
+if(isset($_SESSION['user_id']) && !empty($_SESSION['user_id']))
+  {
+    if(isset($_GET["id"]) && !empty($_GET["id"]))
+    {
+      $user_id=$_GET['id'];
+      $query="SELECT status FROM application WHERE id='".$user_id."'";
+      $query_run=mysqli_query($con,$query);
+      $status=mysqli_result($query_run,0,'status');
+    }
+?>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="stylep.css">
+</head>
+<body>
+<div class="container">
+  <div class="steps">
+    <?php
+    if($status=="1")
+    {
+      ?>
+    <ul>
+      <li class="list active">1</li>
+      <li class="list">2</li>
+      <li class="list">3</li>
+         </ul>
+      <?php
+     }
+     ?>
+ 
+
+    <?php
+    else if($status=="2")
+    {
+      ?>
+    <ul>
+      <li class="list ">1</li>
+      <li class="list active">2</li>
+      <li class="list">3</li>
+         </ul> 
+      <?php
+     }
+     ?>
+
+
+    <?php
+    else if($status=="3")
+    {
+      ?>
+    <ul>
+      <li class="list ">1</li>
+      <li class="list ">2</li>
+      <li class="list active">3</li>
+        </ul>  
+      <?php
+     }
+     ?>
+
+
+
+  </div>
+
+<div >
+  <table>
+    <tr>
+      <th>
+        <b>SR NO.</b>&nbsp;&nbsp;
+      </th>
+      <th>
+        <b>STAGE</b>
+      </th>
+    </tr>
+
+    <tr>
+      <th>
+        <b>1.</b>
+      </th>
+      <th>
+        <b>Applied</b>
+      </th>
+    </tr>
+
+    <tr>
+      <th>
+        <b>2.</b>
+      </th>
+      <th>
+        <b>Under Process</b>
+      </th>
+    </tr>
+
+    <tr>
+      <th>
+        <b>3.</b>
+      </th>
+      <th>
+        <b>Approval</b>
+      </th>
+    </tr>
+  </table>
+</div>
+</div>
+<script type="text/javascript">
+  $(".list").click(function() {
+  $(this).toggleClass("active");
+});
+</script>
+</body>
+</html>
