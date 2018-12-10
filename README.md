@@ -66,7 +66,7 @@ Link to Original Directory: [Code for Good Mumbai 2018 - Team 7 ](https://github
 ## Built With
 
 * [PHP Mailer](https://github.com/PHPMailer/PHPMailer)
-* [Admin LTE 2 Bootstrap Template] (https://adminlte.io/themes/AdminLTE/index2.html)
+* [Admin LTE 2 Bootstrap Template](https://adminlte.io/themes/AdminLTE/index2.html)
 
 ## Authors
 
