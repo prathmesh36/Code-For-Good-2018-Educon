@@ -13,7 +13,7 @@ Following are the features we have implemented:
 * Document Uploading and Viewing of every student user for verifying their authenticity
 * PHP Mailer Based Notification of Application Status
 
-Link to Original Directory: [https://github.com/Mumbai18/team-7](Code for Good Mumbai 2018 - Team 7)
+Link to Original Directory: [Code for Good Mumbai 2018 - Team 7 ](https://github.com/Mumbai18/team-7)
 
 ## Getting Started
 
@@ -58,7 +58,7 @@ Link to Original Directory: [https://github.com/Mumbai18/team-7](Code for Good M
 <center><img src="SS/11.png"></center>
 
 ### PHP Mailer based Notification System
-<center><img src="SS/12.png"></center>
+<center><img src="SS/12.png" width="250" height="400"></center>
 
 ### Application Status
 <center><img src="SS/7.png"></center>
@@ -66,7 +66,7 @@ Link to Original Directory: [https://github.com/Mumbai18/team-7](Code for Good M
 ## Built With
 
 * [PHP Mailer](https://github.com/PHPMailer/PHPMailer)
-* Admin LTE 2 Bootstrap Template
+* [Admin LTE 2 Bootstrap Template] (https://adminlte.io/themes/AdminLTE/index2.html)
 
 ## Authors
 
