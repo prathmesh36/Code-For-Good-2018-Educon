@@ -29,15 +29,15 @@ $mail->SMTPSecure = 'tls';
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "prathmesh1297@gmail.com";
+$mail->Username = "";
 //Password to use for SMTP authentication
-$mail->Password = "161297pmPM";
+$mail->Password = "";
 //Set who the message is to be sent from
-$mail->setFrom('prathmesh1297@gmail.com', 'First Last');
+$mail->setFrom('user@gmail.com', 'First Last');
 //Set an alternative reply-to address
-$mail->addReplyTo('mhatreaniket121@gmail.com', 'First Last');
+$mail->addReplyTo('user2@gmail.com', 'First Last');
 //Set who the message is to be sent to
-$mail->addAddress('prathmesh36@yahoo.com', 'Prathamesh Mhapsekar');
+$mail->addAddress('anotheruser@yahoo.com', 'Prathamesh Mhapsekar');
 //Set the subject line
 $mail->Subject = 'EduCon Application Mail';
 //Read an HTML message body from an external file, convert referenced images to embedded,
