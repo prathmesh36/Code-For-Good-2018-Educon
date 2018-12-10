@@ -8,9 +8,10 @@ Other processes like verifying the student personally, passing the donation, fun
 
 To eliminate the manual process and provide a semi automated solution in this era of digitization, we have implemented some economical and feasible solutions that will help in smooth functioning of NGO processes.
 Following are the features we have implemented:
-* Feature 1
-* Feature 2
-* Feature 3
+* Role Based Authentication Systen for different users of the System - Donor, Student, Committee Member, etc.
+* Chart Based Visualization of Student profile for assisting in decision making to both donor while donating amount as well as committee members for passing donations
+* Document Uploading and Viewing of every student user for verifying their authenticity
+* PHP Mailer Based Notification of Application Status
 
 Link to Original Directory: [https://github.com/Mumbai18/team-7](Code for Good Mumbai 2018 - Team 7)
 
@@ -28,49 +29,53 @@ Link to Original Directory: [https://github.com/Mumbai18/team-7](Code for Good M
 ### Prerequisites
 
 * [Xampp PHP 5.6 or Above](https://www.apachefriends.org/download.html)
-* [Gmail Email Id](https://www.gmail.com)
+* [Gmail Email ID](https://www.gmail.com)
 
 ## Demo
 
 ### Login Page
-<center><img src="SS/1.png"></center>
-
-### Profile Page
-<center><img src="SS/2.png"></center>
-
-### Chat System for Online Counseling
 <center><img src="SS/3.png"></center>
 
-### Attendance Tracking
+### Student Registration Page
 <center><img src="SS/4.png"></center>
 
-### College E-Commerce
+### Donor Registration Page
 <center><img src="SS/5.png"></center>
 
-### Student-Teacher Forum
+### Student Profile Page
 <center><img src="SS/6.png"></center>
 
-### E-books
-<center><img src="SS/7.png"></center>
-
-
-### Live Streaming Lectures
+### Apply for Application Page 1 (Personal Details)
 <center><img src="SS/8.png"></center>
 
-### QR based Attendance
+### Apply for Application Page 2 (Educational Details)
 <center><img src="SS/9.png"></center>
+
+### Apply for Application Page 3 (Document Upload)
+<center><img src="SS/10.png"></center>
+
+### Apply for Application Page 4 (Status)
+<center><img src="SS/11.png"></center>
+
+### PHP Mailer based Notification System
+<center><img src="SS/12.png"></center>
+
+### Application Status
+<center><img src="SS/7.png"></center>
 
 ## Built With
 
-* [EZ Web Player](http://www.ezwebplayer.com/)
+* [PHP Mailer](https://github.com/PHPMailer/PHPMailer)
 * Admin LTE 2 Bootstrap Template
 
 ## Authors
 
-* **Mandar Mhapsekar**-[mandar10](https://github.com/mandar10)
 * **Prathmesh Mhapsekar**-[prathmesh36](https://github.com/prathmesh36 )
-* **Raj Patel**
-* **Aniket Mhatre**-[aniketm07](https://github.com/aniketm07)
+* **Gurpreet Kaur Saimy**-[preet-kaur](https://github.com/preet-kaur)
+* **Priyanka Narwani**-[priyanka68](https://github.com/Priyanka68)
+* **Jyoti Tejwani**-[JyotiTejwani29](https://github.com/JyotiTejwani29)
+* **Hrithik Gavali**-[hrithikgavali](https://github.com/hrithikgavali)
+* **Purvam Poojari**-[PurvamPujari](https://github.com/PurvamPujari)
 
 ## License
 
